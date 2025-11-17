@@ -1,20 +1,5 @@
 spring:
   application:
-    name: user-service
+    name: user-service   # or order-service / api-gateway / eureka-server
   config:
     import: "configserver:"
-server:
-  port: 8081
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
-
-resilience4j:
-  circuitbreaker:
-    instances:
-      orderServiceCB:
-        slidingWindowSize: 10
-        minimumNumberOfCalls: 5
-        failureRateThreshold: 50

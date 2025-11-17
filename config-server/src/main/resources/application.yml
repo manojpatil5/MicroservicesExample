@@ -1,6 +1,8 @@
 server:
   port: 8888
 spring:
+  application:
+    name: config-server
   security:
     basic:
       enabled: false
@@ -10,6 +12,7 @@ spring:
         git:
           uri: https://github.com/manojpatil5/configServer.git
           default-label: main
+          clone-on-start: true
 management:
   endpoints:
     web:

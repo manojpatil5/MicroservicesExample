@@ -1,11 +1,5 @@
 spring:
   application:
-    name: order-service
+    name: order-service   # or order-service / api-gateway / eureka-server
   config:
     import: "configserver:"
-server:
-  port: 8082
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
